@@ -5,5 +5,6 @@ module.exports = class BotiumMockMessage {
     this.messageText = fromJson.messageText
     this.sourceData = fromJson.sourceData
     this.sourceAction = fromJson.sourceAction
+    this.recipient = fromJson.recipient
   }
 }

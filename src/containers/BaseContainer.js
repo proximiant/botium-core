@@ -31,8 +31,8 @@ module.exports = class BaseContainer {
     return Promise.resolve(this)
   }
 
-  UserSaysText (text, sender) {
-    const mockMsg = new BotiumMockMessage({ sender: sender, messageText: text })
+  UserSaysText (text, sender, recipient) {
+    const mockMsg = new BotiumMockMessage({ sender: sender, messageText: text, recipient: recipient })
     return this.UserSays(mockMsg)
   }
 

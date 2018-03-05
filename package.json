@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeforequity-at/botium-core.git"
+    "url": "git+https://github.com/proximiant/botium-core.git"
   },
   "author": "Florian Treml",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codeforequity-at/botium-core/issues"
+    "url": "https://github.com/proximiant/botium-core/issues"
   },
-  "homepage": "https://github.com/codeforequity-at/botium-core#readme",
+  "homepage": "https://github.com/proximiant/botium-core#readme",
   "dependencies": {
     "async": "^2.6.0",
     "body-parser": "^1.18.2",

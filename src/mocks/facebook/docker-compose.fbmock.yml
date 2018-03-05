@@ -7,6 +7,8 @@ services:
         build:
             context: .
             dockerfile: Dockerfile.fbmock
+        ports:
+        - "8443:443"
         volumes:
         - .:/usr/src/app
         environment:

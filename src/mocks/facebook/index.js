@@ -124,12 +124,12 @@ appMock.all('*', function (req, res) {
   })
 })
 
-var httpsOptions = {
-  key: fs.readFileSync(path.resolve(__dirname, '127.0.0.1.key')),
-  cert: fs.readFileSync(path.resolve(__dirname, '127.0.0.1.cert'))
-}
+// var httpsOptions = {
+//   key: fs.readFileSync(path.resolve(__dirname, '127.0.0.1.key')),
+//   cert: fs.readFileSync(path.resolve(__dirname, '127.0.0.1.cert'))
+// }
 
-https.createServer(httpsOptions, appMock).listen(443, '0.0.0.0', function (err) {
+http.createServer(httpsOptions, appMock).listen(443, '0.0.0.0', function (err) {
   if (err) {
     console.log('error listening 443: ' + err)
   } else {

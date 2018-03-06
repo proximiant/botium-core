@@ -177,8 +177,12 @@ appTest.get('/', function (req, res) {
 })
 
 function sendToBot (mockMsg) {
-  var ts = getTs()
 
+  var ts = getTs()
+    
+  if (mockMsg.recipient) {
+    pageid = recipient
+  }
   var msgContainer = {
     object: 'page',
     entry: [

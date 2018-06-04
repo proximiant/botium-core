@@ -153,7 +153,22 @@ appTest.get('/', function (req, res) {
           method: 'POST',
           json: {
             entry: [
-              { messaging: ['fbmock'] }
+              { messaging: [
+                  {
+                    'message': {
+                      'text': "ping message endpoint from fbmock",
+                      'mid': 'mid.2674558838',
+                      'seq': 1000
+                    },
+                    'sender': {
+                      'id': 'fb_mock_ping_messenger'
+                    },
+                    'recipient': {
+                      'id': '841834962585553'
+                    }
+                  }
+                ]
+              }
             ]
           }
         }

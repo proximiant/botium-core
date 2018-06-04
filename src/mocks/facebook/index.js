@@ -153,7 +153,7 @@ appTest.get('/', function (req, res) {
           method: 'POST',
           json: {
             entry: [
-              { messaging: [] }
+              { messaging: ['fbmock'] }
             ]
           }
         }

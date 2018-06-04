@@ -161,7 +161,7 @@ appTest.get('/', function (req, res) {
                       'seq': 1000
                     },
                     'sender': {
-                      'id': 'fb_mock_ping_messenger'
+                      'id': 'qa_test_secret'
                     },
                     'recipient': {
                       'id': '841834962585553'

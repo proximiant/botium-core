@@ -149,28 +149,8 @@ appTest.get('/', function (req, res) {
       if (inUse) {
         console.log('checking (' + webhookurl + ') for response')
         var options = {
-          uri: webhookurl,
-          method: 'POST',
-          json: {
-            entry: [
-              { messaging: [
-                  {
-                    'message': {
-                      'text': "ping message endpoint from fbmock",
-                      'mid': 'mid.2674558838',
-                      'seq': 1000
-                    },
-                    'sender': {
-                      'id': 'qa_test_secret'
-                    },
-                    'recipient': {
-                      'id': '841834962585553'
-                    }
-                  }
-                ]
-              }
-            ]
-          }
+          uri: webhookurl.replace('messenger', 'health_liveness'),
+          method: 'GET',
         }
         request(options, function (err, response, body) {
           if (err) {
